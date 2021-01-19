@@ -6,7 +6,8 @@ Works on nvim v0.4.4
 
 1) Clone the repo
 2) Install all the pre-requiste packages using the pre.sh script
-3) And run nvim
+3) Change terminal font to "Source Code Pro for Powerline Semibold", font size 11
+4) And run nvim
 
 ## vim-plug
 

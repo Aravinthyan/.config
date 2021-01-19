@@ -9,3 +9,5 @@ source $HOME/.config/nvim/keys/mappings.vim
 source $HOME/.config/nvim/themes/onedark.vim
 " This contains the config for the coc plugin
 source $HOME/.config/nvim/plug-config/coc.vim
+" This is the config file for the airline statusline
+source $HOME/.config/nvim/themes/airline.vim

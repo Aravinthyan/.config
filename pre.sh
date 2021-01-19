@@ -41,3 +41,18 @@ echo "Python3 pynvim"
 echo "##################################################\n"
 echo ""
 python3 -m pip install --user --upgrade pynvim
+
+echo ""
+echo "##################################################"
+echo "Install fonts for the arrows and stuff for airline "
+echo "##################################################\n"
+echo ""
+# clone
+git clone https://github.com/powerline/fonts.git --depth=1
+# install
+cd fonts
+./install.sh
+# clean-up a bit
+cd ..
+rm -rf fonts
+

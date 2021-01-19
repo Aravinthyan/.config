@@ -23,6 +23,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Stable version of coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+    " Airline for statusline
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'    
+
 call plug#end()
 
 " Automatically install missing plugins on startup
