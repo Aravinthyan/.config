@@ -19,6 +19,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     
     " Onedark theme, kinda looks like vscode default theme
     Plug 'joshdick/onedark.vim'
+    
+    " Stable version of coc
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
