@@ -11,21 +11,35 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
     
-    " File Explorer
-    Plug 'scrooloose/NERDTree'
-    
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
     
-    " Onedark theme, kinda looks like vscode default theme
-    Plug 'joshdick/onedark.vim'
+    " NVcode theme
+    Plug 'christianchiarulli/nvcode-color-schemes.vim'
     
     " Stable version of coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
+    
     " Airline for statusline
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'    
+    
+    " Ranger plugin
+    Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+    
+    " Plugin for git commands
+    Plug 'tpope/vim-fugitive'
+    
+    " Plugin that shows when lines are different from preivous commit
+    Plug 'mhinz/vim-signify'
+    
+    " Plugin for floaterm
+    Plug 'voldikss/vim-floaterm' 
+    
+    " Plugin for fzf, perfoms latest install of fzf as well
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'    
+    Plug 'airblade/vim-rooter'
 
 call plug#end()
 

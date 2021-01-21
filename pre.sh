@@ -2,57 +2,48 @@
 
 echo ""
 echo "##################################################"
-echo "Checking for updates ..."
+echo "Performing updates ..."
 echo "##################################################"
 echo ""
 sudo apt update
 
 echo ""
 echo "##################################################"
-echo "Installing nodejs and npm"
-echo "##################################################\n"
+echo "Installing the following:"
+echo "- nodejs"
+echo "- npm"
+echo "- snapd"
+echo "- ripgrep"
+echo "- fd-find"
+echo "##################################################"
 echo ""
-sudo apt install nodejs npm
+sudo apt install nodejs npm snapd ripgrep fd-find
 
 echo ""
 echo "##################################################"
-echo "Installing snapd"
-echo "##################################################\n"
-echo ""
-sudo apt install snapd
-
-echo ""
+echo "Installing ccls via snapd"
 echo "##################################################"
-echo "Installing ccls"
-echo "##################################################\n"
 echo ""
 sudo snap install ccls --classic
 
 echo ""
 echo "##################################################"
 echo "Python2 pynvim"
-echo "##################################################\n"
+echo "##################################################"
 echo ""
 python2 -m pip install --user --upgrade pynvim
 
 echo ""
 echo "##################################################"
 echo "Python3 pynvim"
-echo "##################################################\n"
+echo "##################################################"
 echo ""
 python3 -m pip install --user --upgrade pynvim
 
 echo ""
 echo "##################################################"
-echo "Install fonts for the arrows and stuff for airline "
-echo "##################################################\n"
+echo "Install from source the following"
+echo "- Ranger"
+echo "- Hack NERDFonts"
+echo "##################################################"
 echo ""
-# clone
-git clone https://github.com/powerline/fonts.git --depth=1
-# install
-cd fonts
-./install.sh
-# clean-up a bit
-cd ..
-rm -rf fonts
-
