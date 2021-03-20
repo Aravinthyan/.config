@@ -1,0 +1,24 @@
+# kill application
+super + shift + q
+    i3-msg kill
+
+# restart i3-wm
+super + shift + r
+    i3-msg restart
+
+##########################################################################################
+#   NAVIGATION
+##########################################################################################
+
+# change focus
+super + { ,shift} + {h, j, k, l}
+    i3-msg {focus, move} {left, down, up, right}
+
+# horizontal, vertical orientation
+alt + {h, v}
+    i3-msg split {h, v}
+
+# switch to workspace
+super + { ,shift} + {1-9, 0}
+    i3-msg {workspace, move container to workspace} {1-9, 0}
+
