@@ -20,20 +20,8 @@ exec --no-startup-id amixer
 # run sxhkd
 exec_always --no-startup-id sxhkd -c ~/.config/sxhkd/sxhkdrc ~/.config/sxhkd/i3_sxhkdrc
 
-# change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
-
-# move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
-
 # split in horizontal orientation
-bindsym $mod+h split h
+# bindsym $mod+h split h
 
 # split in vertical orientation
 bindsym $mod+v split v
