@@ -6,4 +6,11 @@ super + Escape
 super + Return
     st
 
+# open firefox
+super + i
+    firefox-esr
+
+# start dmenu (a program launcher), 'm' for menu
+super + m
+    dmenu_run
 
