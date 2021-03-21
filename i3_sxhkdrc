@@ -1,14 +1,14 @@
 # kill application
-super + shift + q
+super + q
     i3-msg kill
 
 # restart i3-wm
 super + shift + r
     i3-msg restart
 
-##########################################################################################
-#   NAVIGATION
-##########################################################################################
+# reload i3-wm
+super + shift + c
+    i3-msg reload
 
 # change focus
 super + { ,shift} + {h, j, k, l}
@@ -21,4 +21,13 @@ alt + {h, v}
 # switch to workspace
 super + { ,shift} + {1-9, 0}
     i3-msg {workspace, move container to workspace} {1-9, 0}
+
+# toggle fullscreen mode for the focused container
+super + f
+    i3-msg fullscreen toggle
+
+# change container layout (stacked, tabbed, default)
+super + {s, t, d}
+    i3-msg layout {stacking, tabbed, default}
+
 
