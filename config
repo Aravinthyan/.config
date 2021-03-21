@@ -26,6 +26,9 @@ exec_always --no-startup-id sxhkd -c ~/.config/sxhkd/sxhkdrc ~/.config/sxhkd/i3_
 # run polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
+# set keyboard to gb
+exec_always setxkbmap gb
+
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
