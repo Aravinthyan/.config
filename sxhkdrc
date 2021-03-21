@@ -4,7 +4,7 @@ super + Escape
 
 # start st terminal
 super + Return
-    st
+    st -z 13
 
 # open firefox
 super + i
@@ -12,5 +12,5 @@ super + i
 
 # start dmenu (a program launcher), 'm' for menu
 super + m
-    dmenu_run
+    dmenu_run -S -l 10 -nb '#000000' -nf '#ffffff' -sb '#ff8c00' -sf '#ffffff' -bw 3
 
