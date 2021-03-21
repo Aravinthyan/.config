@@ -1,17 +1,5 @@
 ;==========================================================
 ;
-; THIS IS AN EXAMPLE CONFIGURATION FILE!
-; IT IS NOT SUPPOSED TO WORK OUT OF THE BOX SINCE IS CONTAINS
-; SETTINGS THAT ARE SPECIFIC TO THE MACHINE WHICH WAS USED
-; TO GENERATE IT.
-; Please refer to the web documentation hosted at:
-; https://github.com/polybar/polybar#configuration
-; and
-; https://github.com/polybar/polybar/wiki/Configuration
-; if you want to automatically generate one for you.
-;
-;==========================================================
-;
 ;
 ;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
 ;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
@@ -30,13 +18,16 @@
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #222
-background-alt = #444
+;background of the entire bar set to black
+background = #000000 
+; background of the current workspace set to darkish grey
+background-alt = #444444
 ;foreground = ${xrdb:color7:#222}
-foreground = #dfdfdf
-foreground-alt = #555
-primary = #ffb52a
-secondary = #e60053
+; foreground is the colour of the numbers set to white for readability
+foreground = #ffffff
+foreground-alt = #ffffff
+primary = #ff8c00
+secondary = #ffffff
 alert = #bd2c40
 
 [bar/example]
@@ -45,7 +36,8 @@ width = 100%
 height = 27
 ;offset-x = 1%
 ;offset-y = 1%
-radius = 6.0
+; no radius around the bar
+radius = 0.0
 fixed-center = false
 
 background = ${colors.background}
@@ -54,6 +46,7 @@ foreground = ${colors.foreground}
 line-size = 3
 line-color = #f00
 
+; border size is the gap between the window and the bar 
 border-size = 4
 border-color = #00000000
 
@@ -61,15 +54,17 @@ padding-left = 0
 padding-right = 2
 
 module-margin-left = 1
-module-margin-right = 2
+module-margin-right = 1
 
 font-0 = fixed:pixelsize=10;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 
-modules-left = bspwm i3
-modules-center = mpd
-modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
+modules-left = i3
+modules-center = xwindow
+modules-right = filesystem xbacklight pulseaudio memory cpu wlan eth battery temperature date powermenu
+
+separator = |
 
 tray-position = right
 tray-padding = 2
