@@ -1,23 +1,27 @@
-"    ____      _ __        _
-"   /  _/___  (_) /__   __(_)___ ___
-"   / // __ \/ / __/ | / / / __ `__ \
-" _/ // / / / / /__| |/ / / / / / / /
-"/___/_/ /_/_/\__(_)___/_/_/ /_/ /_/
-
-" Add any plugins in this file
-source $HOME/.config/nvim/vim-plug/plugins.vim
-" Configure the settings in this file
-source $HOME/.config/nvim/general/settings.vim
-" Add key mappings in this file
-source $HOME/.config/nvim/keys/mappings.vim
-
-" Themes
-source $HOME/.config/nvim/themes/nvcode.vim
-
-" Plugins configs
-source $HOME/.config/nvim/plug-config/coc.vim
-source $HOME/.config/nvim/themes/airline.vim
-source $HOME/.config/nvim/plug-config/rnvimr.vim
-source $HOME/.config/nvim/plug-config/signify.vim
-source $HOME/.config/nvim/plug-config/floaterm.vim
-source $HOME/.config/nvim/plug-config/fzf.vim
+syntax enable                           " Enables syntax highlighing
+set hidden
+set nowrap                              " Display long lines as just one line
+set encoding=utf-8                      " The encoding displayed
+set pumheight=10                        " Makes popup menu smaller
+set fileencoding=utf-8                  " The encoding written to file
+set ruler              			        " Show the cursor position all the time
+set cmdheight=2                         " More space for displaying messages
+set splitbelow                          " Horizontal splits will automatically be below
+set splitright                          " Vertical splits will automatically be to the right
+set t_Co=256                            " Support 256 colors
+set tabstop=4                           " Insert 2 spaces for a tab
+set shiftwidth=4                        " Change the number of space characters inserted for indentation
+set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
+set expandtab                           " Converts tabs to spaces
+set smartindent                         " Makes indenting smart
+set autoindent                          " Good auto indent
+set laststatus=0                        " Always display the status line
+set number                              " Line numbers
+set cursorline                          " Highlight of the current line
+set showtabline=2                       " Always show tabs
+set nobackup                            " This is recommended by coc
+set nowritebackup                       " This is recommended by coc
+set updatetime=300                      " Faster completion
+set timeoutlen=500                      " By default timeoutlen is 1000 ms
+set clipboard=unnamedplus               " Copy paste between vim and everything else
+set colorcolumn=81
