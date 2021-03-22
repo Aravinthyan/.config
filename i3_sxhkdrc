@@ -30,4 +30,7 @@ super + f
 super + {s, t, d}
     i3-msg layout {stacking, tabbed, default}
 
+# move to the next workspace
+alt + { ,shift} + Tab
+    i3-msg workspace {next, prev}
 
