@@ -1,0 +1,16 @@
+# restart sxhkd
+super + Escape
+    pkill -USR1 -x sxhkd
+
+# start st terminal
+super + Return
+    st -z 13
+
+# open firefox
+super + i
+    firefox-esr
+
+# start dmenu (a program launcher), 'm' for menu
+super + m
+    dmenu_run -S -l 10 -nb '#000000' -nf '#ffffff' -sb '#ff8c00' -sf '#ffffff' -bw 3
+

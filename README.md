@@ -36,3 +36,5 @@ This calls the other configs in the above directories. This is better and easier
 # i3
 
 # polybar
+
+# sxhkd
