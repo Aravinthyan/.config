@@ -32,3 +32,5 @@ This contains the generic settings like set number for nvim.
 ## init.vim
 
 This calls the other configs in the above directories. This is better and easier to maintain than keeping all the configs in the init.vim file.
+
+# i3
