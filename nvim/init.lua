@@ -1,0 +1,5 @@
+require('plugins')
+require('nv-globals')
+vim.cmd('luafile ~/.config/nvim/nv-settings.lua')
+require('colorscheme')
+require('settings')
