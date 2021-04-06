@@ -14,3 +14,11 @@ super + i
 super + m
     dmenu_run -S -l 10 -nb '#000000' -nf '#ffffff' -sb '#ff8c00' -sf '#ffffff' -bw 3
 
+# whole screenshot
+Print
+    maim "/home/$USER/Pictures/$(echo $(date).png | tr " " _)"
+
+# selective screenshot
+shift + Print
+	maim --select "/home/$USER/Pictures/$(echo $(date).png | tr " " _)"
+
