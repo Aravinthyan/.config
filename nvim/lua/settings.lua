@@ -28,7 +28,7 @@ vim.cmd('set tabstop=4')
 -- Change the number of space characters inserted for indentation
 vim.cmd('set shiftwidth=4') 
 -- setting column to 81
-vim.cmd('set colorcolumn=81') 
+vim.cmd('set colorcolumn=101')
 vim.o.smarttab = true 
 -- Converts tabs to spaces
 vim.bo.expandtab = true 
