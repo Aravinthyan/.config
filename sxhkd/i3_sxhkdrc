@@ -1,5 +1,5 @@
 # kill application
-super + q
+alt + F4
     i3-msg kill
 
 # restart i3-wm
