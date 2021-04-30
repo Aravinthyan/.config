@@ -87,5 +87,21 @@ return require("packer").startup(
         use {"kabouzeid/nvim-lspinstall", opt = true}
         require_plugin("nvim-lspinstall")
 
+        -- -- Debugging
+        -- use {"mfussenegger/nvim-dap", opt = true}
+
+        -- use {"rafamadriz/friendly-snippets", opt = true}
+
+        -- use {"windwp/nvim-ts-autotag", opt = true}
+
+
+        -- use {"folke/which-key.nvim", opt = true}
+        -- use {"kevinhwang91/nvim-bqf", opt = true}
+
+        -- require_plugin("friendly-snippets")
+        -- require_plugin("nvim-dap")
+        -- require_plugin("nvim-ts-autotag")
+        -- require_plugin("which-key.nvim")
+        -- require_plugin("nvim-bqf")
     end
 )
