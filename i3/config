@@ -18,7 +18,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # set keyboard repeat and rate
-exec xset r rate 250 60
+exec_always xset r rate 250 60
 
 # run sxhkd
 exec_always --no-startup-id sxhkd -c ~/.config/sxhkd/sxhkdrc ~/.config/sxhkd/i3_sxhkdrc
