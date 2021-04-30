@@ -1,20 +1,32 @@
 local execute = vim.api.nvim_command
 local fn = vim.fn
 
-local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
 
 if fn.empty(fn.glob(install_path)) > 0 then
-  execute('!git clone https://github.com/wbthomason/packer.nvim '..install_path)
-  execute 'packadd packer.nvim'
+    execute("!git clone https://github.com/wbthomason/packer.nvim " .. install_path)
+    execute "packadd packer.nvim"
 end
 
-return require('packer').startup(function()
-    -- Packer can manage itself
-    use 'wbthomason/packer.nvim'    
-    -- Explorer
-    use 'kyazdani42/nvim-tree.lua'
-    use 'kyazdani42/nvim-web-devicons'
-    -- Color
-    use 'christianchiarulli/nvcode-color-schemes.vim'
+--- Check if a file or directory exists in this path
+local function require_plugin(plugin)
+    local plugin_prefix = fn.stdpath("data") .. "/site/pack/packer/opt/"
 
-end)
+    local plugin_path = plugin_prefix .. plugin .. "/"
+    --	print('test '..plugin_path)
+    local ok, err, code = os.rename(plugin_path, plugin_path)
+    if not ok then
+        if code == 13 then
+            -- Permission denied, but it exists
+            return true
+        end
+    end
+    --	print(ok, err, code)
+    if ok then
+        vim.cmd("packadd " .. plugin)
+    end
+    return ok, err, code
+end
+
+vim.cmd "autocmd BufWritePost plugins.lua PackerCompile" -- Auto compile when there are changes in plugins.lua
+
