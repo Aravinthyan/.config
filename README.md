@@ -1,9 +1,19 @@
 ## .config
 
-# nvim
+# neovim
 
-Works on nvim v0.5.0
+Install latest version of neovim (master). Install all plugins as follows:
+
+```
+:PackerCompile
+:PackerInstall
+```
 
 # Packages to install
 
-Need to complete
+Node.js v12.x
+
+```
+curl -fsSL https://deb.nodesource.com/setup_12.x | sudo bash -
+sudo apt install -y nodejs
+```
