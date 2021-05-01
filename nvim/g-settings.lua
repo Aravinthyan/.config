@@ -41,14 +41,3 @@ O.lua.formatter = 'lua-format'
 -- O.lua.formatter = 'lua-format'
 O.lua.autoformat = false
 
--- javascript
-O.tsserver.formatter = 'prettier'
-O.tsserver.linter = nil
-O.tsserver.autoformat = true
-
--- json
-O.json.autoformat = true
-
--- ruby
-O.ruby.autoformat = true
--- create custom autocommand field (This would be easy with lua)

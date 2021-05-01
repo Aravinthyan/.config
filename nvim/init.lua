@@ -1,7 +1,7 @@
 require('plugins')
 require('lv-globals')
 require('lv-utils')
-vim.cmd('luafile ~/.config/nvim/lv-settings.lua')
+vim.cmd('luafile ~/.config/nvim/g-settings.lua')
 -- require('lv-autocommands')
 require('settings')
 require('keymappings')
