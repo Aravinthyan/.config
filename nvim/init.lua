@@ -1,8 +1,6 @@
 require('plugins')
 require('lv-globals')
-require('lv-utils')
 vim.cmd('luafile ~/.config/nvim/g-settings.lua')
--- require('lv-autocommands')
 require('settings')
 require('keymappings')
 require('colorscheme')
@@ -17,8 +15,10 @@ require('lv-lspinstall')
 -- require('lv-telescope')
 -- require('lv-rnvimr')
 -- require('lv-which-key')
+-- require('lv-autocommands')
 
 -- TODO is there a way to do this without vimscript
+require('lv-utils')
 vim.cmd('source ~/.config/nvim/vimscript/functions.vim')
 
 -- LSP
