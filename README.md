@@ -11,6 +11,14 @@ Install all plugins as follows:
 :PackerInstall
 ```
 
+## Language servers
+
+Install ccls and svls via snap as follows:
+
+```
+sudo snap install ccls svls
+```
+
 # Packages to install
 
 Node.js v12.x
@@ -23,3 +31,4 @@ sudo apt install -y nodejs
 Hack Nerd Font
 
 Save the .ttf files for [Hack Nerd fonts](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack) at ```~/.local/share/fonts```. Run ```fc-cache``` after saving the .ttf files.
+
