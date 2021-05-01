@@ -1,6 +1,6 @@
-## .config
+# .config
 
-# neovim
+## neovim
 
 Install the latest release of neovim by following the instructions [here](https://github.com/neovim/neovim#install-from-source).
 
@@ -11,7 +11,7 @@ Install all plugins as follows:
 :PackerInstall
 ```
 
-## Language servers
+### Language servers
 
 Install ccls and svls via snap as follows:
 
@@ -19,7 +19,7 @@ Install ccls and svls via snap as follows:
 sudo snap install ccls svls
 ```
 
-# Packages to install
+## Packages to install
 
 Node.js v12.x
 
