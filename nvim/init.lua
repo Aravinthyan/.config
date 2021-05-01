@@ -17,9 +17,9 @@ require('lv-lspinstall')
 -- require('lv-which-key')
 -- require('lv-autocommands')
 
--- TODO is there a way to do this without vimscript
-require('lv-utils')
-vim.cmd('source ~/.config/nvim/vimscript/functions.vim')
+-- -- TODO is there a way to do this without vimscript
+-- require('lv-utils')
+-- vim.cmd('source ~/.config/nvim/vimscript/functions.vim')
 
 -- LSP
 require('lsp')
