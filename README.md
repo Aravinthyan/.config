@@ -18,7 +18,6 @@ curl -fsSL https://deb.nodesource.com/setup_12.x | sudo bash -
 sudo apt install -y nodejs
 ```
 
-Font-Awesome
-```
-sudo apt install fonts-font-awesome
-```
+Hack Nerd Font
+
+Save the .ttf files for [Hack Nerd fonts](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack) at ```~/.local/share/fonts```.
