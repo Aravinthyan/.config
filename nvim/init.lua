@@ -23,6 +23,7 @@ require('lv-lspinstall')
 
 -- LSP
 require('lsp')
+require('lsp.ccls')
 -- require('lsp.clangd')
 -- require('lsp.php-ls')
 -- require('lsp.dart-ls')
