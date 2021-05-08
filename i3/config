@@ -47,8 +47,6 @@ exec_always feh --bg-fill ~/Pictures/wallpaper.png
 # # focus the child container
 # bindsym $mod+d focus child
 
-for_window [class="Skype"] floating enable
-
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1"
@@ -104,4 +102,15 @@ client.focused          $bg-color           $bg-color          $text-color      
 client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-color #808080 
 client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color #808080
 client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #808080
+
+# custom application window configurations
+
+# Skype
+exec --no-startup-id skypeforlinux
+assign [class="Skype"] $ws1
+for_window [class="Skype"] floating enable, move absolute position 1670 px 35 px
+
+# Element
+exec --no-startup-id element-desktop
+assign [class="Element"] $ws2
 
