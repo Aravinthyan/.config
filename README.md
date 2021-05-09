@@ -36,3 +36,9 @@ Save the [Hack Nerd font](https://github.com/ryanoasis/nerd-fonts/tree/master/pa
 
 Save the [SFProDisplay font](https://github.com/blaisck/sfwin) (.ttf files)  at ```~/.local/share/fonts```. Run ```fc-cache``` after saving the .ttf files.
 
+**dunst**
+
+```
+sudo apt install dunst
+```
+
