@@ -30,11 +30,11 @@ sudo apt install -y nodejs
 
 **Hack Nerd Font**
 
-Save the [Hack Nerd font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack) (.ttf files) at ```~/.local/share/fonts```. Run ```fc-cache``` after saving the .ttf files.
+Save the [Hack Nerd font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack) (.ttf files) at ```~/.local/share/fonts```. Run ```fc-cache -f -v``` after saving the .ttf files.
 
 **San Francisco Font**
 
-Save the [SFProDisplay font](https://github.com/blaisck/sfwin) (.ttf files)  at ```~/.local/share/fonts```. Run ```fc-cache``` after saving the .ttf files.
+Save the [SFProDisplay font](https://github.com/blaisck/sfwin) (.ttf files)  at ```~/.local/share/fonts```. Run ```fc-cache -f -v``` after saving the .ttf files.
 
 **dunst**
 
