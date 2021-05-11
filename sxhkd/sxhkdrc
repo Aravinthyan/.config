@@ -26,3 +26,10 @@ shift + Print
 ctrl + alt + Delete
    /home/$USER/.config/scripts/power.sh
 
+# mount
+super + shift + m
+   /home/$USER/.config/scripts/mount.sh
+
+# unmount
+super + shift + u
+   /home/$USER/.config/scripts/unmount.sh
