@@ -41,4 +41,8 @@ Save the [SFProDisplay font](https://github.com/blaisck/sfwin) (.ttf files)  at 
 ```
 sudo apt install dunst
 ```
+**maim**
 
+```
+sudo apt install maim
+```
