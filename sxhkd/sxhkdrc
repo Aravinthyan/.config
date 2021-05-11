@@ -22,3 +22,7 @@ Print
 shift + Print
 	maim --select "/home/$USER/Pictures/$(echo $(date).png | tr " " _)"
 
+# power options
+ctrl + alt + Delete
+   /home/$USER/.config/scripts/power.sh
+
