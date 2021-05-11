@@ -18,26 +18,23 @@ then
         choosen_part=$(lsblk -lp | grep "part $" | awk '{print $1, "(" $4 ")"}' | \
             $dmenu_command -p "Choose partition: ")
         
-        if [[ $choosen_part = "" ]]
-        then
-        	exit 0
-        fi
+        [[ $choosen_part = "" ]] && exit 0
         
         choosen_part=$(echo $choosen_part | awk '{print $1}')
 
         mount_point=$(echo -e "/mnt/\n/media/" | $dmenu_command -p "Enter mount point: ")
         
-        if [[ $mount_point != "" ]]
-        then
-        	sudo mkdir -p $mount_point 2>/dev/null
-            sudo mount $choosen_part $mount_point 2>/dev/null
+        [[ $mount_point = "" ]] && exit 0
 
-            if [[ $? -eq 0 ]]
-            then
-                notify-send "Mounted $choosen_part at $mount_point"
-            else
-                notify-send "$choosen_part not mounted at $mount_point"
-            fi
+        [[ ! -d $mount_point ]] && st -e sudo mkdir -p $mount_point 2>/dev/null
+        	
+        st -e sudo mount $choosen_part $mount_point 2>/dev/null
+
+        if [[ $? -eq 0 ]]
+        then
+            notify-send "Mounted $choosen_part at $mount_point"
+        else
+            notify-send "$choosen_part not mounted at $mount_point"
         fi
     elif [[ $choice = "2) Encrypted" ]]
     then
@@ -58,7 +55,7 @@ then
         then
             choosen_part=$(echo $choosen_part | awk '{print $1}')
 
-            sudo umount $choosen_part 2>/dev/null
+            st -e sudo umount $choosen_part 2>/dev/null
 
             if [[ $? -eq 0 ]]
             then
