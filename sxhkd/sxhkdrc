@@ -22,6 +22,10 @@ Print
 shift + Print
 	maim --select "/home/$USER/Pictures/$(echo $(date).png | tr " " _)"
 
+# selective screenshot - clipboard
+ctrl + shift + Print
+    maim --select | xclip -selection clipboard -t image/png
+
 # power options
 ctrl + alt + Delete
    /home/$USER/.config/scripts/power.sh
