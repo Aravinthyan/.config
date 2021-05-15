@@ -46,3 +46,9 @@ sudo apt install dunst
 ```
 sudo apt install maim
 ```
+
+**xclip**
+
+```
+sudo apt install xclip
+```
