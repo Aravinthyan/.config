@@ -7,3 +7,6 @@
 [submodule "networkmanager-dmenu"]
 	path = networkmanager-dmenu
 	url = https://github.com/Aravinthyan/networkmanager-dmenu
+[submodule "dwm"]
+	path = dwm
+	url = https://github.com/Aravinthyan/dwm.git
