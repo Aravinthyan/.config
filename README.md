@@ -41,14 +41,18 @@ Save the [SFProDisplay font](https://github.com/blaisck/sfwin) (.ttf files)  at 
 ```
 sudo apt install dunst
 ```
-**maim**
 
-```
-sudo apt install maim
-```
+## Application and package
 
-**xclip**
-
-```
-sudo apt install xclip
-```
+| Application | Package  |
+| ----------- | -------- |
+| editor      | neovim   |
+| terminal    | st       |
+| word        | wps      |
+| powerpoint  | wps      |
+| excel       | wps      |
+| PDF reader  | zathura  |
+| image viewer | feh     |
+| file manager | ranger  |
+| latex compiler | texlive-full |
+| automated LaTex build system | rubber |
