@@ -4,7 +4,7 @@ super + Escape
 
 # start st terminal
 super + Return
-    st -z 13
+    st
 
 # open firefox
 super + i
