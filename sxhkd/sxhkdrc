@@ -41,3 +41,7 @@ super + shift + u
 # lock screen
 super + l
     slock
+
+# suspend and then hibenate
+super + s
+    systemctl suspend-then-hibernate; slock
