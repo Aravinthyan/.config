@@ -6,8 +6,8 @@ choice=$(echo -e $power_prompt | $dmenu_command -p "Choose option: ")
 
 if [[ $choice = "1) Reboot" ]]
 then
-    st -e sudo reboot now
+    sudo reboot now
 elif [[ $choice = "2) Shutdown" ]]
 then
-    st -e sudo shutdown now
+    sudo shutdown now
 fi
