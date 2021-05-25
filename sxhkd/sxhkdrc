@@ -37,3 +37,7 @@ super + shift + m
 # unmount
 super + shift + u
    /home/$USER/.config/scripts/unmount.sh
+
+# lock screen
+super + l
+    slock
