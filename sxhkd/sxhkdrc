@@ -45,3 +45,15 @@ super + l
 # suspend and then hibenate
 super + s
     systemctl suspend-then-hibernate; slock
+
+# increase sound volume
+XF86AudioRaiseVolume
+    pactl set-sink-volume 0 +5%
+
+# decrease sound volume
+XF86AudioLowerVolume
+    pactl set-sink-volume 0 -5%
+
+# mute sound
+XF86AudioMute
+    pactl set-sink-mute 0 toggle
