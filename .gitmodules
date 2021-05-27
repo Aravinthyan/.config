@@ -4,9 +4,6 @@
 [submodule "st"]
 	path = st
 	url = https://github.com/Aravinthyan/st.git
-[submodule "networkmanager-dmenu"]
-	path = networkmanager-dmenu
-	url = https://github.com/Aravinthyan/networkmanager-dmenu
 [submodule "dwm"]
 	path = dwm
 	url = https://github.com/Aravinthyan/dwm.git
