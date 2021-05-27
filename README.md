@@ -1,8 +1,14 @@
-# .config
+# USER
+
+## Installation
+
+```
+cd ~
+git clone https://github.com/Aravinthyan/USER.git .
+sudo ./setup.sh $USER
+```
 
 ## neovim
-
-Install the latest release of neovim by following the instructions [here](https://github.com/neovim/neovim#install-from-source).
 
 Install all plugins as follows:
 
@@ -35,12 +41,6 @@ Save the [Hack Nerd font](https://github.com/ryanoasis/nerd-fonts/tree/master/pa
 **San Francisco Font**
 
 Save the [SFProDisplay font](https://github.com/blaisck/sfwin) (.ttf files)  at ```~/.local/share/fonts```. Run ```fc-cache -f -v``` after saving the .ttf files.
-
-**dunst**
-
-```
-sudo apt install dunst
-```
 
 ## Application and package
 
