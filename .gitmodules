@@ -1,12 +1,12 @@
 [submodule "dmenu"]
-	path = dmenu
+	path = .config/dmenu
 	url = https://github.com/Aravinthyan/dmenu.git
 [submodule "st"]
-	path = st
+	path = .config/st
 	url = https://github.com/Aravinthyan/st.git
 [submodule "dwm"]
-	path = dwm
+	path = .config/dwm
 	url = https://github.com/Aravinthyan/dwm.git
 [submodule "slock"]
-	path = slock
+	path = .config/slock
 	url = https://github.com/Aravinthyan/slock
