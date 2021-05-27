@@ -3,6 +3,7 @@
 ## Installation
 
 ```
+sudo apt install git
 cd ~
 git clone https://github.com/Aravinthyan/USER.git .
 sudo ./setup.sh $USER
