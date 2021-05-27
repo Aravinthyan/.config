@@ -20,7 +20,7 @@ sudo apt install element-desktop -y
 ####################################
 
 # install packages from git repos
-mkdir ~/tmp && cd ~/tmp
+mkdir $2/tmp && cd $2/tmp
 
 # install neovim
 git clone https://github.com/neovim/neovim.git
@@ -28,7 +28,7 @@ cd neovim
 make CMAKE_BUILD_TYPE=Release
 sudo make install
 
-cd ~/.config
+cd $2/.config
 
 ####################################
 # COMPILE AND INSTALL SUBMODULES
@@ -40,8 +40,8 @@ git submodule update --recursive
 # install dwm
 cd dwm
 sudo make clean install
-sudo ln -s ~/.config/dwm/dwm.desktop /usr/share/xsessions/dwm.desktop
-sudo ln -s ~/.config/dwm/dwm.sh /usr/local/bin/dwm.sh
+sudo ln -s $2/.config/dwm/dwm.desktop /usr/share/xsessions/dwm.desktop
+sudo ln -s $2/.config/dwm/dwm.sh /usr/local/bin/dwm.sh
 # install dmenu
 cd ../dmenu
 sudo make clean install
@@ -51,14 +51,14 @@ sudo make clean install
 # install slock
 cd ../slock
 sudo make clean install
-cd ~
+cd $2
 
 ####################################
 # GET FONTS
 ####################################
 
 # make directory to save fonts
-mkdir -p ~/.local/share/fonts
+mkdir -p $2/.local/share/fonts
 
 wget -P /home/$1/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Bold/complete/Hack%20Bold%20Nerd%20Font%20Complete.ttf
 wget -P /home/$1/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/BoldItalic/complete/Hack%20Bold%20Italic%20Nerd%20Font%20Complete.ttf
