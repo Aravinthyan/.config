@@ -6,7 +6,8 @@
 sudo apt install git
 cd ~
 git clone https://github.com/Aravinthyan/USER.git .
-sudo ./setup.sh $USER $HOME
+rm -rf .*
+./setup.sh $USER $HOME
 ```
 
 ## neovim
