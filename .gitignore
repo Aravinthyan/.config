@@ -3,3 +3,19 @@ Desktop/
 Documents/
 Downloads/
 Pictures/
+
+# ignore configs at .config/
+.config/autostart/
+.config/dconf/
+.config/ibus/
+.config/nvim/plugin/
+.config/pulse/
+.config/skypeforlinux/
+
+.cache/
+.fehbg
+.gitconfig
+.local/
+.mozilla/
+.pki/
+.wget-hsts
