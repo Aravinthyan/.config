@@ -19,3 +19,4 @@ Pictures/
 .mozilla/
 .pki/
 .wget-hsts
+.lesshst
