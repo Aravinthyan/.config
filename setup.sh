@@ -35,6 +35,7 @@ make CMAKE_BUILD_TYPE=Release
 echo $password | sudo -kS make install
 
 cd $2/.config
+rm -rf tmp
 
 ####################################
 # COMPILE AND INSTALL SUBMODULES
