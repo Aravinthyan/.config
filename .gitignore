@@ -11,6 +11,7 @@ Pictures/
 .config/nvim/plugin/
 .config/pulse/
 .config/skypeforlinux/
+.config/htop/
 
 .cache/
 .fehbg
