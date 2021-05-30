@@ -2,7 +2,12 @@ read -sp "Enter Password: " password
 
 echo $password | sudo -kS true
 
-[[ $? != 0 ]] && echo "Incorrect password"; exit 1
+# if password is incorrect exit
+if [[ $? != 0 ]]
+then
+	echo "Incorrect password"
+	exit 1
+fi
 
 ####################################
 # APT
