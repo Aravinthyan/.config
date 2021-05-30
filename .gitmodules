@@ -10,3 +10,6 @@
 [submodule "slock"]
 	path = .config/slock
 	url = https://github.com/Aravinthyan/slock
+[submodule ".config/dwmblocks"]
+	path = .config/dwmblocks
+	url = https://github.com/Aravinthyan/dwmblocks.git
