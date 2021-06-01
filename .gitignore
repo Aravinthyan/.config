@@ -12,11 +12,12 @@ Pictures/
 .config/pulse/
 .config/skypeforlinux/
 .config/htop/
+.config/nordvpn/
 
 .cache/
 .fehbg
 .gitconfig
-.local/
+.local/share
 .mozilla/
 .pki/
 .wget-hsts
