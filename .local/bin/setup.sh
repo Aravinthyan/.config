@@ -17,7 +17,7 @@ fi
 echo $password | sudo -kS apt update
 echo $password | sudo -kS apt install -y build-essential xorg-dev feh maim xclip x11-apps gdm3 \
     zathura ranger firefox-esr texlive rubber automake gettext libtool libtool-bin autoconf cmake \
-    pkg-config unzip htop dunst fonts-hack sxhkd blueman ntfs-3g libnotify-bin ufw
+    pkg-config unzip htop dunst fonts-hack sxhkd blueman ntfs-3g libnotify-bin ufw vlc
 
 # install element
 echo $password | sudo -kS apt install -y wget apt-transport-https
