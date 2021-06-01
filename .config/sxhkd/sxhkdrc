@@ -28,15 +28,15 @@ ctrl + shift + Print
 
 # power options
 ctrl + alt + Delete
-   /home/$USER/.config/scripts/power.sh
+   /home/$USER/.local/bin/power.sh
 
 # mount
 super + shift + m
-   /home/$USER/.config/scripts/mount.sh
+   /home/$USER/.local/bin/mount.sh
 
 # unmount
 super + shift + u
-   /home/$USER/.config/scripts/unmount.sh
+   /home/$USER/.local/bin/unmount.sh
 
 # lock screen
 super + l
