@@ -58,3 +58,5 @@ Save the [SFProDisplay font](https://github.com/blaisck/sfwin) (.ttf files)  at 
 | file manager | ranger  |
 | latex compiler | texlive-full |
 | automated LaTex build system | rubber |
+| music player | museeks |
+| video player | vlc |
