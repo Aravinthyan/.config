@@ -28,3 +28,9 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
+
+# delete tmp folder
+rm -rf $HOME/tmp
+# create tmp folder
+mkdir $HOME/tmp
+

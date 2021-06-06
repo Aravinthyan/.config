@@ -3,6 +3,7 @@ Desktop/
 Documents/
 Downloads/
 Pictures/
+tmp/
 
 # ignore configs at .config/
 .config/autostart/
