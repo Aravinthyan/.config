@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # $1 - $USER
 # $2 - $HOME
 
