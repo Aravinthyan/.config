@@ -19,19 +19,28 @@ Install all plugins as follows:
 :PackerInstall
 ```
 
-## Application and package
+## Program type and Application
 
-| Application | Package  |
+**Installed via script**
+
+| Program type | Application  |
 | ----------- | -------- |
-| editor      | neovim   |
-| terminal    | st       |
-| word        | wps      |
-| powerpoint  | wps      |
-| excel       | wps      |
+| Editor      | neovim   |
+| Terminal    | st       |
 | PDF reader  | zathura  |
-| image viewer | feh     |
-| file manager | ranger  |
-| latex compiler | texlive-full |
-| automated LaTex build system | rubber |
-| music player | museeks |
-| video player | vlc |
+| Image viewer | feh     |
+| File manager | ranger  |
+| LaTex compiler | texlive-full |
+| Automated LaTex build system | rubber |
+| Video player | vlc |
+
+
+**Not installed via script**
+
+| Program type | Application  |
+| ----------- | -------- |
+| Music player | museeks |
+| Word        | WPS Office |
+| Powerpoint  | WPS Office |
+| Excel       | WPS Office |
+| Disk Encryption | VeraCrypt |
