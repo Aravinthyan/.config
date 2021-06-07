@@ -17,7 +17,7 @@ state=$(upower -i `upower -e | grep 'BAT'` | grep "state:" | awk '{print $2}')
 percentage=$(upower -i `upower -e | grep 'BAT'` | grep "percentage:" | awk '{print $2}')
 
 # if fully charged, echo and exit
-[[ $state = "fully-charged"  ]] && echo "Fully Charged: 100% - $plug" && exit 0
+[[ $state = "fully-charged"  ]] && echo "Fully Charged: $percentage - $plug" && exit 0
 
 # if charging print Charging and percentage
 [[ $state = "charging" ]] && echo "Charging: $percentage - $plug" && exit 0
