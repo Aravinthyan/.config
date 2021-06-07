@@ -86,6 +86,7 @@ mkdir Desktop Documents Downloads Pictures
 # configure firewall
 ufw default deny incoming
 ufw default allow outgoing
+ufw enable
 
 # ensure USER home directory is owned by USER
 chown -R $USER:$USER $2
