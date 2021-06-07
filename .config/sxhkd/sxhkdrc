@@ -61,3 +61,12 @@ XF86AudioMute
 # get network connection
 super + n
     get_network.sh
+
+# increase brightness
+ctrl + Up
+    brightness.py 1
+
+# decrease brightness
+ctrl + Down
+    brightness.py 0
+

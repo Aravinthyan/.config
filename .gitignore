@@ -14,6 +14,7 @@ tmp/
 .config/skypeforlinux/
 .config/htop/
 .config/nordvpn/
+.config/brightness/
 
 .cache/
 .fehbg
