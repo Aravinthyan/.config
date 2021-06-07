@@ -11,7 +11,7 @@
 apt update
 apt install -y build-essential xorg-dev feh maim xclip x11-apps gdm3 zathura ranger firefox-esr \
     texlive rubber automake gettext libtool libtool-bin autoconf cmake pkg-config unzip htop dunst \
-    fonts-hack sxhkd blueman ntfs-3g libnotify-bin ufw vlc
+    fonts-hack sxhkd blueman ntfs-3g libnotify-bin ufw vlc curl
 
 # install element
 apt install -y wget apt-transport-https

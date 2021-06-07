@@ -57,3 +57,7 @@ XF86AudioLowerVolume
 # mute sound
 XF86AudioMute
     pactl set-sink-mute 0 toggle
+
+# get network connection
+super + n
+    get_network.sh
