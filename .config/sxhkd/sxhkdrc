@@ -58,10 +58,6 @@ XF86AudioLowerVolume
 XF86AudioMute
     volume.sh 2
 
-# get network connection
-super + n
-    get_network.sh
-
 # increase brightness
 ctrl + Up
     brightness.py 1
