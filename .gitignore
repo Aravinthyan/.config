@@ -24,3 +24,4 @@ tmp/
 .pki/
 .wget-hsts
 .lesshst
+.python_history
