@@ -48,15 +48,15 @@ super + s
 
 # increase sound volume
 XF86AudioRaiseVolume
-    pactl set-sink-volume 0 +5%
+    volume.sh 1
 
 # decrease sound volume
 XF86AudioLowerVolume
-    pactl set-sink-volume 0 -5%
+    volume.sh 0
 
 # mute sound
 XF86AudioMute
-    pactl set-sink-mute 0 toggle
+    volume.sh 2
 
 # get network connection
 super + n
