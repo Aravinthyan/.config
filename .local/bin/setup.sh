@@ -47,17 +47,25 @@ git submodule init
 git submodule update --recursive
 # install dwm
 cd dwm
+git checkout custom
 make clean install
 ln -s $2/.config/dwm/dwm.desktop /usr/share/xsessions/dwm.desktop
 ln -s $2/.config/dwm/dwm.sh /usr/local/bin/dwm.sh
 # install dmenu
 cd ../dmenu
+git checkout custom
 make clean install
 # install st
 cd ../st
+git checkout custom
 make clean install
 # install slock
 cd ../slock
+git checkout custom
+make clean install
+# install dwmblocks
+cd ../dwmblocks
+git checkout custom
 make clean install
 cd $2
 
