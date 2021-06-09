@@ -97,4 +97,5 @@ ufw default allow outgoing
 ufw enable
 
 # ensure USER home directory is owned by USER
-chown -R $USER:$USER $2
+cd /home
+chown -R $USER:$USER $1
