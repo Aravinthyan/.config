@@ -16,6 +16,7 @@ tmp/
 .config/nordvpn/
 .config/brightness/
 .config/connect_to_network/
+.config/Element/
 
 .cache/
 .fehbg
