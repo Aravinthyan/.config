@@ -12,7 +12,7 @@ git clone https://github.com/Aravinthyan/USER.git .
 sudo ~/.local/bin/setup.sh $USER $HOME
 ```
 
-Upon completing the above commands ensure to save the desired wallpaper at ```~/Pictures``` as ```wallpaper.png```. The path or name of the file can be changed by editing the following file, ```~/.config/dwm/dwm.sh```.
+Upon completing the above commands ensure to save the desired wallpaper at ```~/Pictures``` as ```wallpaper.jpg```. The path or name of the file can be changed by editing the following file, ```~/.config/dwm/dwm.sh```.
 
 ## neovim
 
