@@ -17,6 +17,15 @@ tmp/
 .config/brightness/
 .config/connect_to_network/
 .config/Element/
+.config/Kingsoft/
+.config/Museeks/
+.config/Trolltech.conf
+.config/VeraCrypt/
+.config/mimeapps.list
+.config/Nextcloud/
+.config/gtk-2.0/
+
+
 
 .cache/
 .fehbg
