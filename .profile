@@ -10,6 +10,7 @@
 
 export EDITOR="nvim"
 export TERMINAL="st"
+export _JAVA_AWT_WM_NONREPARENTING=1
 
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
