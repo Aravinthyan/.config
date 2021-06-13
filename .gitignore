@@ -36,3 +36,5 @@ tmp/
 .wget-hsts
 .lesshst
 .python_history
+.java/
+.matlab/
