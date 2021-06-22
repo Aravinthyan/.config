@@ -1,9 +1,11 @@
-.bash_history
 Desktop/
 Documents/
 Downloads/
 Pictures/
 tmp/
+STM32Cube/
+STM32CubeIDE/
+files/
 
 # ignore configs at .config/
 .config/autostart/
@@ -24,8 +26,9 @@ tmp/
 .config/mimeapps.list
 .config/Nextcloud/
 .config/gtk-2.0/
-
-
+.config/vlc/
+.config/QtProject.conf
+.config/gtk-3.0/
 
 .cache/
 .fehbg
@@ -38,3 +41,14 @@ tmp/
 .python_history
 .java/
 .matlab/
+.eclipse/
+.stm32cubeide/
+.stm32cubemx/
+.stmcufinder/
+.swt/
+.bash_history
+
+.local/bin/py.test
+.local/bin/pytest
+.local/lib/
+
