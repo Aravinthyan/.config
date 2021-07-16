@@ -1,0 +1,348 @@
+{
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "workbench.startupEditor": "none",
+    "vscode-neovim.neovimExecutablePaths.linux": "/usr/local/bin/nvim",
+    "vscode-neovim.neovimInitVimPaths.linux": "/home/sreethyan/.config/nvim/vscode/init.vim",
+    "editor.lineNumbers": "relative",
+    "gitlens.defaultDateFormat": "Do MMMM YYYY, h:mma",
+    "gitlens.defaultDateShortFormat": "Do MMMM YYYY",
+    "gitlens.currentLine.format": "${author, }${agoOrDate}${ • message|50?}",
+    "gitlens.codeLens.enabled": false,
+    "git.confirmSync": false,
+    "gitlens.views.formats.commits.description": "${author}",
+    "gitlens.views.formats.stashes.description": "${date}",
+    "gitlens.changes.locations": [
+        "gutter",
+        "overview"
+    ],
+    "gitlens.heatmap.locations": [
+        "overview"
+    ],
+    "gitlens.blame.highlight.locations": [
+        "gutter",
+        "line",
+        "overview"
+    ],
+    "whichkey.sortOrder": "alphabetically",
+    "whichkey.bindings": [
+        {
+            "key": "?",
+            "name": "Search keybindings",
+            "type": "command",
+            "command": "whichkey.searchBindings"
+        },
+        {
+            "key": "b",
+            "name": "Buffers/Editors",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "b",
+                    "name": "Show all buffers/editors",
+                    "type": "command",
+                    "command": "workbench.action.showAllEditors"
+                },
+                {
+                    "key": "B",
+                    "name": "Show all buffers/editors in active group",
+                    "type": "command",
+                    "command": "workbench.action.showEditorsInActiveGroup"
+                },
+                {
+                    "key": "h",
+                    "name": "Move editor into left group",
+                    "type": "command",
+                    "command": "workbench.action.moveEditorToLeftGroup"
+                },
+                {
+                    "key": "j",
+                    "name": "Move editor into below group",
+                    "type": "command",
+                    "command": "workbench.action.moveEditorToBelowGroup"
+                },
+                {
+                    "key": "k",
+                    "name": "Move editor into above group",
+                    "type": "command",
+                    "command": "workbench.action.moveEditorToAboveGroup"
+                },
+                {
+                    "key": "l",
+                    "name": "Move editor into right group",
+                    "type": "command",
+                    "command": "workbench.action.moveEditorToRightGroup"
+                },
+                {
+                    "key": "u",
+                    "name": "Reopen closed editor",
+                    "type": "command",
+                    "command": "workbench.action.reopenClosedEditor"
+                }
+            ]
+        },
+        {
+            "key": "e",
+            "name": "Toggle Explorer",
+            "type": "command",
+            "command": "workbench.action.toggleSidebarVisibility"
+        },
+        {
+            "key": "f",
+            "name": "File",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "w",
+                    "name": "Open active in new window",
+                    "type": "command",
+                    "command": "workbench.action.files.showOpenedFileInNewWindow"
+                },
+                {
+                    "key": "s",
+                    "name": "Save all files",
+                    "type": "command",
+                    "command": "workbench.action.files.saveAll"
+                },
+                {
+                    "key": "r",
+                    "name": "Open recent",
+                    "type": "command",
+                    "command": "workbench.action.openRecent"
+                },
+                {
+                    "key": "R",
+                    "name": "Rename file",
+                    "type": "commands",
+                    "commands": [
+                        "workbench.files.action.showActiveFileInExplorer",
+                        "renameFile"
+                    ]
+                },
+                {
+                    "key": "p",
+                    "name": "Copy path of active file",
+                    "type": "command",
+                    "command": "workbench.action.files.copyPathOfActiveFile"
+                }
+            ]
+        },
+        {
+            "key": "g",
+            "name": "Git",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "/",
+                    "name": "Search Commits",
+                    "command": "gitlens.showCommitSearch",
+                    "type": "command",
+                    "when": "gitlens:enabled && config.gitlens.keymap == 'alternate'"
+                },
+                {
+                    "key": "b",
+                    "name": "Checkout",
+                    "type": "command",
+                    "command": "git.checkout"
+                },
+                {
+                    "key": "B",
+                    "name": "Browse",
+                    "type": "command",
+                    "command": "gitlens.openFileInRemote"
+                },
+                {
+                    "key": "f",
+                    "name": "Fetch",
+                    "type": "command",
+                    "command": "git.fetch"
+                },
+                {
+                    "key": "h",
+                    "name": "Heatmap",
+                    "type": "command",
+                    "command": "gitlens.toggleFileHeatmap"
+                },
+                {
+                    "key": "j",
+                    "name": "Next Change",
+                    "type": "command",
+                    "command": "workbench.action.editor.nextChange"
+                },
+                {
+                    "key": "k",
+                    "name": "Previous Change",
+                    "type": "command",
+                    "command": "workbench.action.editor.previousChange"
+                },
+                {
+                    "key": "t",
+                    "name": "Toggle Blame",
+                    "type": "bindings",
+                    "bindings": [
+                        {
+                            "key": "l",
+                            "name": "Line Blame",
+                            "type": "command",
+                            "command": "gitlens.toggleLineBlame",
+                            "when": "editorTextFocus && gitlens:canToggleCodeLens && gitlens:enabled && config.gitlens.keymap == 'alternate'"
+                        },
+                        {
+                            "key": "f",
+                            "name": "File Blame",
+                            "type": "command",
+                            "command": "gitlens.toggleFileBlame",
+                            "when": "editorTextFocus && gitlens:canToggleCodeLens && gitlens:enabled && config.gitlens.keymap == 'alternate'"
+                        }
+                    ]
+                },
+                {
+                    "key": "H",
+                    "name": "History",
+                    "type": "bindings",
+                    "bindings": [
+                        {
+                            "key": "f",
+                            "name": "File History",
+                            "type": "command",
+                            "command": "gitlens.showFileHistoryView",
+                            "when": "editorTextFocus && gitlens:canToggleCodeLens && gitlens:enabled && config.gitlens.keymap == 'alternate'"
+                        },
+                        {
+                            "key": "l",
+                            "name": "Line History",
+                            "type": "command",
+                            "command": "gitlens.showLineHistoryView",
+                            "when": "editorTextFocus && gitlens:canToggleCodeLens && gitlens:enabled && config.gitlens.keymap == 'alternate'"
+                        }
+                    ]
+                },
+                {
+                    "key": "S",
+                    "name": "Stash",
+                    "type": "command",
+                    "command": "gitlens.showQuickStashList"
+                },
+                {
+                    "key": "s",
+                    "name": "Stage",
+                    "type": "command",
+                    "command": "git.stage"
+                },
+                {
+                    "key": "u",
+                    "name": "Unstage",
+                    "type": "command",
+                    "command": "git.unstage"
+                }
+            ]
+        },
+        {
+            "key": "u",
+            "name": "Toggles UI",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "f",
+                    "name": "Toggle full screen",
+                    "type": "command",
+                    "command": "workbench.action.toggleFullScreen"
+                },
+                {
+                    "key": "t",
+                    "name": "Toggle tool bar visibility",
+                    "type": "command",
+                    "command": "workbench.action.toggleActivityBarVisibility"
+                },
+                {
+                    "key": "T",
+                    "name": "Toggle tab visibility",
+                    "type": "command",
+                    "command": "workbench.action.toggleTabsVisibility"
+                },
+                {
+                    "key": "z",
+                    "name": "Toggle zen mode",
+                    "type": "command",
+                    "command": "workbench.action.toggleZenMode"
+                }
+            ]
+        },
+        {
+            "key": "w",
+            "name": "Window",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "h",
+                    "name": "Move editor group left",
+                    "type": "command",
+                    "command": "workbench.action.moveActiveEditorGroupLeft"
+                },
+                {
+                    "key": "j",
+                    "name": "Move editor group down",
+                    "type": "command",
+                    "command": "workbench.action.moveActiveEditorGroupDown"
+                },
+                {
+                    "key": "k",
+                    "name": "Move editor group up",
+                    "type": "command",
+                    "command": "workbench.action.moveActiveEditorGroupUp"
+                },
+                {
+                    "key": "l",
+                    "name": "Move editor group right",
+                    "type": "command",
+                    "command": "workbench.action.moveActiveEditorGroupRight"
+                },
+                {
+                    "key": "t",
+                    "name": "Toggle editor group sizes",
+                    "type": "command",
+                    "command": "workbench.action.toggleEditorWidths"
+                },
+                {
+                    "key": "r",
+                    "name": "Reset editor group sizes",
+                    "type": "command",
+                    "command": "workbench.action.evenEditorWidths"
+                },
+                {
+                    "key": "a",
+                    "name": "Combine all editors",
+                    "type": "command",
+                    "command": "workbench.action.joinAllGroups"
+                },
+                {
+                    "key": "c",
+                    "name": "Close editor group",
+                    "type": "command",
+                    "command": "workbench.action.closeEditorsInGroup"
+                },
+                {
+                    "key": "C",
+                    "name": "Close all editor groups",
+                    "type": "command",
+                    "command": "workbench.action.closeAllGroups"
+                }
+            ]
+        },
+        {
+            "key": "$",
+            "name": "Terminal",
+            "type": "command",
+            "command": "workbench.action.terminal.focus"
+        },
+        {
+            "key": "*",
+            "name": "Search in a project with a selection",
+            "type": "commands",
+            "commands": [
+                "editor.action.addSelectionToNextFindMatch",
+                "workbench.action.findInFiles"
+            ]
+        }
+    ]
+}
