@@ -6,6 +6,7 @@ tmp/
 STM32Cube/
 STM32CubeIDE/
 files/
+Arduino/
 
 # ignore configs at .config/
 .config/autostart/
@@ -29,6 +30,7 @@ files/
 .config/vlc/
 .config/QtProject.conf
 .config/gtk-3.0/
+.config/Code/
 
 .cache/
 .fehbg
@@ -47,6 +49,14 @@ files/
 .stmcufinder/
 .swt/
 .bash_history
+.vscode/
+.arduino15/
+.config/menus/
+.config/zoomus.conf
+.gnome/
+.npm/
+.oracle_jre_usage/
+.zoom/
 
 .local/bin/py.test
 .local/bin/pytest
