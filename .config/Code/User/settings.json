@@ -344,5 +344,9 @@
                 "workbench.action.findInFiles"
             ]
         }
-    ]
+    ],
+    "stm32-for-vscode.openOCDPath": "/usr/bin/openocd",
+    "stm32-for-vscode.makePath": "/usr/bin/make",
+    "stm32-for-vscode.armToolchainPath": "/usr/local/gcc-arm-none-eabi/bin",
+    "explorer.confirmDelete": false
 }
