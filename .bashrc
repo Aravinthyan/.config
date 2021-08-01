@@ -84,3 +84,8 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# device dependant bashrc
+if [ -f ~/.device_bashrc ]; then
+    . ~/.device_bashrc
+fi
