@@ -36,6 +36,11 @@ Arduino/
 .config/openvpn/
 .config/teams/
 .config/timestamps/
+.config/evolution/
+.config/godot/
+.config/remmina/
+.config/user-dirs.dirs
+.config/user-dirs.locale
 
 .cache/
 .fehbg
@@ -64,6 +69,7 @@ Arduino/
 .ipython/
 .jupyter/
 .ssh/
+.device_bashrc
 
 .local/share
 .local/bin/py.test
