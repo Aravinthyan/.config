@@ -14,15 +14,6 @@ sudo ~/.local/bin/setup.sh $USER $HOME
 
 Upon completing the above commands ensure to save the desired wallpaper at ```~/Pictures``` as ```wallpaper.jpg```. The path or name of the file can be changed by editing the following file, ```~/.config/dwm/dwm.sh```.
 
-## neovim
-
-Install all plugins as follows:
-
-```
-:PackerCompile
-:PackerInstall
-```
-
 ## Program type and Application
 
 **Installed via script**
