@@ -66,3 +66,6 @@ ctrl + Up
 ctrl + Down
     brightness.py 0
 
+# choose audio output
+super + a
+    audio_output.sh
