@@ -348,5 +348,12 @@
     "stm32-for-vscode.openOCDPath": "/usr/bin/openocd",
     "stm32-for-vscode.makePath": "/usr/bin/make",
     "stm32-for-vscode.armToolchainPath": "/usr/local/gcc-arm-none-eabi/bin",
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    }
 }
